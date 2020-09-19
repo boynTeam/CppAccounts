@@ -17,7 +17,9 @@ void Runner::printWelcome() {
 }
 
 int Runner::getOperator() {
-    return std::cin.get();
+    char c;
+    std::cin >> c;
+    return c;
 }
 
 void Runner::handleOpt(int optCode) {
